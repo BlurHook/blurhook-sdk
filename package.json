@@ -1,0 +1,47 @@
+{
+  "name": "@blurhook/sdk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BlurHook routing SDK and deployed-contract directory for Robinhood Chain.",
+  "license": "MIT",
+  "author": "BlurHook",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlurHook/blurhook-sdk.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "UPSTREAM.json",
+    "deployments"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "viem": "2.57.11"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
+  }
+}
