@@ -4,6 +4,16 @@ Read-only routing and public deployment information for OpalHook on Robinhood Ch
 
 This package extends the MIT-licensed [ZeroHook SDK](https://github.com/zerohooktrade/zhook-sdk). The upstream routing engine is credited in LICENSE, NOTICE and UPSTREAM.json. OpalHook adds `createOpalHook`, guarded routing defaults, the app's HTTP quote-request validation and OpalHook's own contract directory. Legacy exports remain for compatibility.
 
+## Install
+
+Install [v0.1.1](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.1) from GitHub in your project. Use Node 22.13 or newer.
+
+```sh
+npm install https://github.com/BlurHook/blurhook-sdk/releases/download/v0.1.1/blurhook-sdk-0.1.1.tgz
+```
+
+The package name is `@blurhook/sdk`. The package is unpublished on the npm registry.
+
 ## Build and test
 
 Node 22.13 or newer:
@@ -21,8 +31,6 @@ Offline tests use synthetic/replayed data. Live RPC tests are opt-in through the
 
 ## Use
 
-Build the current source and run `npm install /path/to/opalhook-sdk` from your project to use the OpalHook exports below.
-
 ```ts
 import {createOpalHook,OPALHOOK_DEPLOYMENT,RHC} from '@blurhook/sdk';
 const sdk=createOpalHook();
@@ -37,6 +45,6 @@ Deployed addresses are included in `deployments/robinhood-4663.json` and can be 
 
 ## Compatibility
 
-The first public release shipped on **28 October 2026** as `v0.1.0` under the BlurHook name. The OpalHook rebrand followed on **24 November 2026**. The original GitHub release is available for integrations that use it. Build from current source to use the OpalHook names in this README. The current source version is `v0.1.1` and is not published as a GitHub release or npm registry package. The repository URL and `@blurhook/*` package identifiers still work.
+The first public release shipped on **28 October 2026** as `v0.1.0` under the BlurHook name. The OpalHook rebrand followed on **24 November 2026**. The [original v0.1.0 release](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.0) remains available for existing integrations. The repository URL and `@blurhook/*` package identifiers still work.
 
 `OpalHook`, `createOpalHook`, `OPALHOOK_DEPLOYMENT`, `OpalHookOptions` and `OpalHookRequestError` alias the existing guarded implementation. `BlurHook`, `createBlurHook`, `BLURHOOK_DEPLOYMENT`, `BlurHookOptions` and `BlurHookRequestError` remain exported. No contract redeployment or vault migration is required.
