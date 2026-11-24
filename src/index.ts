@@ -121,3 +121,7 @@ export { TtlCache } from "./cache.js";
 
 export { BlurHook, createBlurHook, BLURHOOK_DEPLOYMENT, type BlurHookOptions } from "./blurhook.js";
 export { parseQuoteRequest, BlurHookRequestError } from "./requests.js";
+
+// OpalHook identity; legacy exports above remain source- and runtime-compatible.
+export { BlurHook as OpalHook, createBlurHook as createOpalHook, BLURHOOK_DEPLOYMENT as OPALHOOK_DEPLOYMENT, type BlurHookOptions as OpalHookOptions } from "./blurhook.js";
+export { BlurHookRequestError as OpalHookRequestError } from "./requests.js";
