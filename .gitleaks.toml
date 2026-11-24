@@ -1,4 +1,4 @@
-title = "BlurHook SDK public source scan"
+title = "OpalHook SDK public source scan"
 [extend]
 useDefault = true
 [[rules]]

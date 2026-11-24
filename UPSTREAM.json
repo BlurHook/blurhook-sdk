@@ -3,9 +3,9 @@
   "commit": "f5e055881a10bca11257dcafdf92e03e0a86fbc6",
   "license": "MIT",
   "local_changes": [
-    "BlurHook guarded routing entry point",
-    "BlurHook public deployment manifest",
-    "BlurHook HTTP request validator",
+    "OpalHook guarded routing entry point",
+    "OpalHook public deployment manifest",
+    "OpalHook HTTP request validator",
     "Standalone packaging, examples and integration tests"
   ]
 }
