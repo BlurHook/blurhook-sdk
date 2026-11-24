@@ -45,6 +45,4 @@ Deployed addresses are included in `deployments/robinhood-4663.json` and can be 
 
 ## Compatibility
 
-The first public release shipped on **28 October 2026** as `v0.1.0` under the BlurHook name. The OpalHook rebrand followed on **24 November 2026**. The [original v0.1.0 release](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.0) remains available for existing integrations. The [v0.1.1 release](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.1) also retains the `@blurhook/sdk` package name. The new tarball installs as `@opalhook/sdk`.
-
-`OpalHook`, `createOpalHook`, `OPALHOOK_DEPLOYMENT`, `OpalHookOptions` and `OpalHookRequestError` alias the existing guarded implementation. `BlurHook`, `createBlurHook`, `BLURHOOK_DEPLOYMENT`, `BlurHookOptions` and `BlurHookRequestError` remain exported. No contract redeployment or vault migration is required.
+See the [migration guide](https://github.com/opalhook/opalhook-sdk/blob/main/MIGRATION.md) for earlier releases and supported aliases.
