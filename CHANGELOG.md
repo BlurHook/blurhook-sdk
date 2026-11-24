@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Distribute the SDK as `@opalhook/sdk` from the OpalHook GitHub repository.
+- Retain the legacy SDK exports and deployed-contract directory.
+
 ## 0.1.1 — 24 November 2026
 
 - Adopt OpalHook branding while retaining existing repository and package locations.
