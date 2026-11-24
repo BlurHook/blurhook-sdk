@@ -1,10 +1,10 @@
 {
   "name": "@blurhook/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
-  "description": "BlurHook routing SDK and deployed-contract directory for Robinhood Chain.",
+  "description": "OpalHook routing SDK and deployed-contract directory for Robinhood Chain.",
   "license": "MIT",
-  "author": "BlurHook",
+  "author": "OpalHook",
   "type": "module",
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
     "LICENSE",
     "NOTICE",
     "UPSTREAM.json",
-    "deployments"
+    "deployments",
+    "CHANGELOG.md"
   ],
   "sideEffects": false,
   "engines": {
