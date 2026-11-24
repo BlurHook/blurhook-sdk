@@ -6,20 +6,20 @@ This package extends the MIT-licensed [ZeroHook SDK](https://github.com/zerohook
 
 ## Install
 
-Install [v0.1.1](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.1) from GitHub in your project. Use Node 22.13 or newer.
+Install [v0.1.2](https://github.com/opalhook/opalhook-sdk/releases/tag/v0.1.2) from GitHub in your project. Use Node 22.13 or newer.
 
 ```sh
-npm install https://github.com/BlurHook/blurhook-sdk/releases/download/v0.1.1/blurhook-sdk-0.1.1.tgz
+npm install https://github.com/opalhook/opalhook-sdk/releases/download/v0.1.2/opalhook-sdk-0.1.2.tgz
 ```
 
-The package name is `@blurhook/sdk`. The package is unpublished on the npm registry.
+The package name is `@opalhook/sdk`. The package is unpublished on the npm registry.
 
 ## Build and test
 
 Node 22.13 or newer:
 
 ```sh
-git clone https://github.com/BlurHook/blurhook-sdk.git opalhook-sdk
+git clone https://github.com/opalhook/opalhook-sdk.git opalhook-sdk
 cd opalhook-sdk
 npm ci --ignore-scripts
 npm run typecheck
@@ -32,7 +32,7 @@ Offline tests use synthetic/replayed data. Live RPC tests are opt-in through the
 ## Use
 
 ```ts
-import {createOpalHook,OPALHOOK_DEPLOYMENT,RHC} from '@blurhook/sdk';
+import {createOpalHook,OPALHOOK_DEPLOYMENT,RHC} from '@opalhook/sdk';
 const sdk=createOpalHook();
 const quote=await sdk.quote({tokenIn:'ETH',tokenOut:RHC.usdg,amount:'0.001',slippageBps:50});
 console.log(quote.amountOut,quote.minOut,quote.tx);
@@ -45,6 +45,6 @@ Deployed addresses are included in `deployments/robinhood-4663.json` and can be 
 
 ## Compatibility
 
-The first public release shipped on **28 October 2026** as `v0.1.0` under the BlurHook name. The OpalHook rebrand followed on **24 November 2026**. The [original v0.1.0 release](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.0) remains available for existing integrations. The repository URL and `@blurhook/*` package identifiers still work.
+The first public release shipped on **28 October 2026** as `v0.1.0` under the BlurHook name. The OpalHook rebrand followed on **24 November 2026**. The [original v0.1.0 release](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.0) remains available for existing integrations. The [v0.1.1 release](https://github.com/BlurHook/blurhook-sdk/releases/tag/v0.1.1) also retains the `@blurhook/sdk` package name. The new tarball installs as `@opalhook/sdk`.
 
 `OpalHook`, `createOpalHook`, `OPALHOOK_DEPLOYMENT`, `OpalHookOptions` and `OpalHookRequestError` alias the existing guarded implementation. `BlurHook`, `createBlurHook`, `BLURHOOK_DEPLOYMENT`, `BlurHookOptions` and `BlurHookRequestError` remain exported. No contract redeployment or vault migration is required.
